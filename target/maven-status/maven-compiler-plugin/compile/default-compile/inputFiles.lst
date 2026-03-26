@@ -1,0 +1,7 @@
+/home/hitesh/Java/SpringBoot/machine-monitoring-backend/src/main/java/com/hitesh/monitoring/MachineMonitoringApplication.java
+/home/hitesh/Java/SpringBoot/machine-monitoring-backend/src/main/java/com/hitesh/monitoring/controller/AlertController.java
+/home/hitesh/Java/SpringBoot/machine-monitoring-backend/src/main/java/com/hitesh/monitoring/controller/HealthController.java
+/home/hitesh/Java/SpringBoot/machine-monitoring-backend/src/main/java/com/hitesh/monitoring/service/AlertService.java
+/home/hitesh/Java/SpringBoot/machine-monitoring-backend/src/main/java/com/hitesh/monitoring/entity/Alert.java
+/home/hitesh/Java/SpringBoot/machine-monitoring-backend/src/main/java/com/hitesh/monitoring/dto/AlertDTO.java
+/home/hitesh/Java/SpringBoot/machine-monitoring-backend/src/main/java/com/hitesh/monitoring/repository/AlertRepository.java

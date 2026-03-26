@@ -1,0 +1,6 @@
+{
+  "machineId": 1,
+  "sensorId": 110,
+  "message": "Repeated overheating detected",
+  "counter": 4
+}

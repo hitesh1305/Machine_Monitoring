@@ -1,0 +1,6 @@
+{
+  "machineId": 3,
+  "sensorId": 305,
+  "message": "Pressure drop detected",
+  "counter": 1
+}

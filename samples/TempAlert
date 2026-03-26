@@ -1,0 +1,6 @@
+{
+  "machineId": 1,
+  "sensorId": 101,
+  "message": "Temperature exceeded threshold",
+  "counter": 1
+}

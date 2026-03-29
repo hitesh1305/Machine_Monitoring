@@ -1,6 +1,8 @@
 F:\Java\Machine_Monitoring\src\main\java\com\hitesh\monitoring\dto\AlertDTO.java
+F:\Java\Machine_Monitoring\src\main\java\com\hitesh\monitoring\exception\AlertNotFoundException.java
 F:\Java\Machine_Monitoring\src\main\java\com\hitesh\monitoring\service\AlertService.java
 F:\Java\Machine_Monitoring\src\main\java\com\hitesh\monitoring\controller\AlertController.java
+F:\Java\Machine_Monitoring\src\main\java\com\hitesh\monitoring\exception\GlobalExceptionHandler.java
 F:\Java\Machine_Monitoring\src\main\java\com\hitesh\monitoring\MachineMonitoringApplication.java
 F:\Java\Machine_Monitoring\src\main\java\com\hitesh\monitoring\controller\HealthController.java
 F:\Java\Machine_Monitoring\src\main\java\com\hitesh\monitoring\entity\Alert.java

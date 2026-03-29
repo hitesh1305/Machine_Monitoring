@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.hitesh.monitoring.dto.AlertDTO;
 import com.hitesh.monitoring.entity.Alert;
+import com.hitesh.monitoring.exception.AlertNotFoundException;
 import com.hitesh.monitoring.repository.AlertRepository;
 
 
@@ -44,7 +45,7 @@ public class AlertService {
 
     public AlertDTO getAlertById(Long id) {
     Alert alert = alertRepository.findById(id)
-            .orElseThrow(() -> new RuntimeException("Alert not found"));
+            .orElseThrow(() -> new AlertNotFoundException("Alert not found with id: "+id));
         return convertToDTO(alert);
     }
 

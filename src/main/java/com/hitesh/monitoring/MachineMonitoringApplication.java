@@ -10,3 +10,4 @@ public class MachineMonitoringApplication {
         SpringApplication.run(MachineMonitoringApplication.class, args);
     }
 }
+

@@ -1,7 +1,9 @@
+com\hitesh\monitoring\exception\AlertNotFoundException.class
 com\hitesh\monitoring\service\AlertService.class
 com\hitesh\monitoring\entity\Alert.class
 com\hitesh\monitoring\MachineMonitoringApplication.class
 com\hitesh\monitoring\controller\HealthController.class
 com\hitesh\monitoring\repository\AlertRepository.class
 com\hitesh\monitoring\controller\AlertController.class
+com\hitesh\monitoring\exception\GlobalExceptionHandler.class
 com\hitesh\monitoring\dto\AlertDTO.class

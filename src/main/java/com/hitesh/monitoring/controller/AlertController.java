@@ -37,7 +37,7 @@ public class AlertController {
         return alertService.getAllAlerts();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("alerts/{id}")
     public AlertDTO getAlertById(@PathVariable Long id) {
         return alertService.getAlertById(id);
     }
@@ -47,7 +47,7 @@ public class AlertController {
         return alertService.getAlertsByMachineId(machineId);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("alerts/{id}")
     public ResponseEntity<Void> deleteAlert(@PathVariable Long id) {
         alertService.deleteAlert(id);
         return ResponseEntity.noContent().build();

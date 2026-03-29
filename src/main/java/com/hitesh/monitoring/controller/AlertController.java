@@ -4,7 +4,13 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.hitesh.monitoring.dto.AlertDTO;
 import com.hitesh.monitoring.entity.Alert;
@@ -37,7 +43,7 @@ public class AlertController {
     }
 
     @GetMapping("/machines/{machineId}/alerts")
-    public List<Alert> getAlertsByMachine(@PathVariable Long machineId) {
+    public List<AlertDTO> getAlertsByMachine(@PathVariable Long machineId) {
         return alertService.getAlertsByMachineId(machineId);
     }
 

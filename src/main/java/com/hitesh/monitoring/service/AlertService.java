@@ -3,6 +3,7 @@ package com.hitesh.monitoring.service;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.hitesh.monitoring.dto.AlertDTO;
@@ -47,8 +48,13 @@ public class AlertService {
         return convertToDTO(alert);
     }
 
-    public List<Alert> getAlertsByMachineId(Long machineId) {
-    return alertRepository.findByMachineId(machineId);
+    public List<AlertDTO> getAlertsByMachineId(Long machineId) {
+        List <Alert> alerts = alertRepository.findByMachineId(machineId);
+        List <AlertDTO> dtoList = new ArrayList<>();
+        for (Alert alert : alerts) {
+            dtoList.add(convertToDTO(alert));
+        }
+        return dtoList;
     }
 
     public void deleteAlert(Long id) {

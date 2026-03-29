@@ -17,7 +17,7 @@ import com.hitesh.monitoring.entity.Alert;
 import com.hitesh.monitoring.service.AlertService;
 
 @RestController
-@RequestMapping("/alerts")
+@RequestMapping("/api")
 public class AlertController {
 
     private final AlertService alertService;
@@ -32,7 +32,7 @@ public class AlertController {
         return ResponseEntity.status(HttpStatus.CREATED).body(savedAlert);
     }
 
-    @GetMapping
+    @GetMapping("/alerts")
     public List<AlertDTO> getAllAlerts() {
         return alertService.getAllAlerts();
     }
